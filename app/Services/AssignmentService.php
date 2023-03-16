@@ -188,10 +188,27 @@ class AssignmentService extends GeneralService
             if(!empty($assignment) && count($data['user_id']) > 1){
 
                 foreach($data['user_id'] as $user){
+
+                    $student_assigned = AssignmentUser::where('user_id', $user)->where('assignment_id', $data['assignment_id'])->first();
+
+                    if(!empty($student_assigned)){
+                        continue;
+                    }
+
                     $assignment->user()->attach($user);
                 }
 
             }else if(!empty($assignment) && count($data['user_id']) == 1){
+
+                $student_assigned = AssignmentUser::where('user_id', $data['user_id'][0])->where('assignment_id', $data['assignment_id'])->first();
+
+                if(!empty($student_assigned)){
+                    return $this->response(
+                        500,
+                        'Student already assigned with the assignment.'
+                    );
+                }
+
                 $assignment->user()->attach($data['user_id'][0]);
             }
 
