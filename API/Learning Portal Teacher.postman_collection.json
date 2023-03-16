@@ -1,0 +1,1280 @@
+{
+	"info": {
+		"_postman_id": "fbb8e3fc-faf3-463f-9da9-ebb4f7897cc1",
+		"name": "Learning Portal Teacher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "teacher11",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "teacher13@admin.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "default"
+						},
+						{
+							"key": "role",
+							"value": "teacher",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Teacher 12",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "teacher15",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "teacher15@admin.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "secret",
+									"type": "default"
+								},
+								{
+									"key": "role",
+									"value": "teacher",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Teacher 15",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:47:14 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:47:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"User successfully registered.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "teacher1",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "teacher1",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "secret",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 09:18:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 09:18:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"User successfully logged in.\",\n        \"data\": {\n            \"email\": \"teacher1\",\n            \"name\": \"Teacher 1\",\n            \"token\": \"1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Assignment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|hf19Eg16qlEDh62GWOcWOdhoF3tplFLhGfphlKf3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/assignment?user_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"assignment"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Assignment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/assignment?user_id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"assignment"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:06:00 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:06:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "54"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"Assignment successfully retrived.\",\n        \"data\": {\n            \"count\": 2,\n            \"data\": [\n                {\n                    \"id\": 1,\n                    \"title\": \"Mathematic Homeworkqwe\",\n                    \"deadline\": \"24/03/2023 03:50 AM\",\n                    \"file\": \"/storage/uploads/assignment/GaMjMQTxIRHpOPwlqY2mtmWzhnSc4aGxxbc6OfUn.txt\"\n                },\n                {\n                    \"id\": 3,\n                    \"title\": \"Api Creation\",\n                    \"deadline\": \"27/03/2023 03:50 AM\",\n                    \"file\": \"/storage/uploads/assignment/GaMjMQTxIRHpOPwlqY2mtmWzhnSc4aGxxbc6OfUn.txt\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Assignment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Api Creation 2",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "Create API",
+							"type": "default"
+						},
+						{
+							"key": "deadline",
+							"value": "2023-03-27 03:50:33",
+							"type": "default"
+						},
+						{
+							"key": "attachment",
+							"type": "file",
+							"src": "/C:/Users/fiq26/Downloads/Holdings.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/assignment/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"assignment",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Assignment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Api Creation 2",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "secret",
+									"type": "default"
+								},
+								{
+									"key": "deadline",
+									"value": "2023-03-27 03:50:33",
+									"type": "default"
+								},
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/F:/Fiq265/Work/UniDLT/E-Scroll Blockchain/E-Scroll API/Mobile V2 API/Mobile E-Scroll V2.postman_collection_30_Jan_2023.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/assignment/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"assignment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 20:11:20 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 20:11:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"Assignment successfully created.\"\n    }\n}"
+				},
+				{
+					"name": "Create Assignment Validation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Api Creation 2",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Create API",
+									"type": "default"
+								},
+								{
+									"key": "deadline",
+									"value": "2023-03-27 03:50:33",
+									"type": "default"
+								},
+								{
+									"key": "attachment",
+									"type": "file",
+									"src": "/C:/Users/fiq26/Downloads/Holdings.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/assignment/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"assignment",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:19:13 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:19:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"status\": 422,\n        \"errors\": {\n            \"description\": [\n                \"The description field is required.\"\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Assignment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "New Update",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "lets update",
+							"type": "default"
+						},
+						{
+							"key": "deadline",
+							"value": "2023-03-27 03:50:33",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/assignment/9/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"assignment",
+						"9",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Assignment",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "New Update",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "lets update",
+									"type": "default"
+								},
+								{
+									"key": "deadline",
+									"value": "2023-03-27 03:50:33",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/assignment/10/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"assignment",
+								"10",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:21:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:21:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"Assignment successfully updated.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Assignment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "assignment_id",
+							"value": "10",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/assignment/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"assignment",
+						"delete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Assignment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "assignment_id",
+									"value": "10",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/assignment/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"assignment",
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 03:54:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 03:54:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"Assignment successfully deleted.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Assign Assignment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assignment_id\" : \"1\",\r\n    \"user_id\" : [\r\n        4,\r\n        5,\r\n        6\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/assignment/assign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"assignment",
+						"assign"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Assign Assignment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assignment_id\" : \"1\",\r\n    \"user_id\" : [\r\n        4,\r\n        5,\r\n        6\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/assignment/assign",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"assignment",
+								"assign"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 02:21:26 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 02:21:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"User successfully assigned asignment.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get student Submission by Specific Assignment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/submission?assignment_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"submission"
+					],
+					"query": [
+						{
+							"key": "assignment_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get student Submission by Specific Assignment",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/submission?assignment_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"submission"
+							],
+							"query": [
+								{
+									"key": "assignment_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:31:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 04:31:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"Submission successfully retrived.\",\n        \"data\": {\n            \"count\": 1,\n            \"data\": [\n                {\n                    \"id\": 2,\n                    \"notes\": \"I done with the homework\",\n                    \"submitted_date\": \"16/03/2023 04:07 AM\",\n                    \"file\": \"http://localhost:8000/storage/uploads/submission/t5D7jYiTwEcLPCz8cIO9OzbLy1twYd4Tp6kIp0vQ.txt\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get student Submission by Specific Assignment and Student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|bta0nFviUxcivUgeeyh7KD3dznB2GFWFdZt55Nkt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/submission/student?assignment_id=1&user_id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"submission",
+						"student"
+					],
+					"query": [
+						{
+							"key": "assignment_id",
+							"value": "1"
+						},
+						{
+							"key": "user_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get student Submission by Specific Assignment and Student",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/v1/submission/student?assignment_id=1&user_id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"submission",
+								"student"
+							],
+							"query": [
+								{
+									"key": "assignment_id",
+									"value": "1"
+								},
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:33:38 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Mar 2023 09:33:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": 200,\n        \"message\": \"Submission successfully retrived.\",\n        \"data\": {\n            \"count\": 3,\n            \"data\": [\n                {\n                    \"id\": 2,\n                    \"notes\": \"I done with the homework\",\n                    \"submitted_date\": \"16/03/2023 04:07 AM\",\n                    \"file\": \"http://localhost:8000/storage/uploads/submission/t5D7jYiTwEcLPCz8cIO9OzbLy1twYd4Tp6kIp0vQ.txt\"\n                },\n                {\n                    \"id\": 3,\n                    \"notes\": \"I done with the homework\",\n                    \"submitted_date\": \"16/03/2023 07:15 AM\",\n                    \"file\": \"http://localhost:8000/storage/uploads/submission/LB7inPOkuZ3DcrqOwF1abPBPA2eQqD4rB59CT6gE.txt\"\n                },\n                {\n                    \"id\": 4,\n                    \"notes\": \"I done with the homework\",\n                    \"submitted_date\": \"16/03/2023 08:45 AM\",\n                    \"file\": \"http://localhost:8000/storage/uploads/submission/DqwhLnyYQdkIEwiFR4C6WLCwMKs9gnmcZsG3JnaG.txt\"\n                }\n            ]\n        }\n    }\n}"
+				}
+			]
+		}
+	]
+}
